@@ -33,15 +33,15 @@ const MATERIALS = [
 ]
 
 function App() {
-  // State
-  const [customFluid, setCustomFluid] = useState(true)
-  const [customObject, setCustomObject] = useState(true)
-  const [fluidDensity, setFluidDensity] = useState('')
-  const [objectDensity, setObjectDensity] = useState('')
+  // State - Default: Zeytinyağı, Alüminyum, 1000g
+  const [customFluid, setCustomFluid] = useState(false)
+  const [customObject, setCustomObject] = useState(false)
+  const [fluidDensity, setFluidDensity] = useState('0.91')
+  const [objectDensity, setObjectDensity] = useState('2.70')
   const [measureType, setMeasureType] = useState('mass')
-  const [measureValue, setMeasureValue] = useState('')
-  const [selectedFluid, setSelectedFluid] = useState('')
-  const [selectedObject, setSelectedObject] = useState('')
+  const [measureValue, setMeasureValue] = useState('1000')
+  const [selectedFluid, setSelectedFluid] = useState('0.91')
+  const [selectedObject, setSelectedObject] = useState('2.70')
   
   // Hesaplama sonuçları
   const [results, setResults] = useState(null)
@@ -175,60 +175,60 @@ function App() {
     ctx.fillStyle = '#0a1628'
     ctx.fillRect(0, containerBottom + 8, w, h - containerBottom - 8)
     
-    // Kuvvet okları (animasyon bittiyse)
-    if (calculatedResults && !animating) {
+    // Kuvvet okları (sürekli görünür)
+    if (calculatedResults) {
       drawForceArrows(ctx, objX, objY, objWidth, objHeight, calculatedResults)
     }
   }, [])
 
-  // Kuvvet okları çiz
+  // Kuvvet okları çiz - ikisi de merkezden başlar
   const drawForceArrows = (ctx, objX, objY, objWidth, objHeight, res) => {
     const centerX = objX + objWidth / 2
     const centerY = objY + objHeight / 2
-    const arrowLength = 70
+    const arrowLength = 80
     
-    // Ağırlık oku (aşağı) - kırmızı
+    // Ağırlık oku (merkezden aşağı) - kırmızı
     ctx.strokeStyle = '#e74c3c'
     ctx.fillStyle = '#e74c3c'
     ctx.lineWidth = 4
     ctx.lineCap = 'round'
     
     ctx.beginPath()
-    ctx.moveTo(centerX + 25, centerY)
-    ctx.lineTo(centerX + 25, centerY + arrowLength)
+    ctx.moveTo(centerX, centerY)
+    ctx.lineTo(centerX, centerY + arrowLength)
     ctx.stroke()
     
     // Ok başı
     ctx.beginPath()
-    ctx.moveTo(centerX + 15, centerY + arrowLength - 12)
-    ctx.lineTo(centerX + 25, centerY + arrowLength)
-    ctx.lineTo(centerX + 35, centerY + arrowLength - 12)
+    ctx.moveTo(centerX - 10, centerY + arrowLength - 12)
+    ctx.lineTo(centerX, centerY + arrowLength)
+    ctx.lineTo(centerX + 10, centerY + arrowLength - 12)
     ctx.fill()
     
     // G etiketi
     ctx.font = 'bold 16px "Space Mono", monospace'
     ctx.fillStyle = '#e74c3c'
-    ctx.fillText('G', centerX + 42, centerY + arrowLength / 2 + 5)
+    ctx.fillText('G', centerX + 15, centerY + arrowLength - 5)
     
-    // Kaldırma kuvveti oku (yukarı) - yeşil
+    // Kaldırma kuvveti oku (merkezden yukarı) - yeşil
     ctx.strokeStyle = '#2ecc71'
     ctx.fillStyle = '#2ecc71'
     
     ctx.beginPath()
-    ctx.moveTo(centerX - 25, centerY + objHeight / 2)
-    ctx.lineTo(centerX - 25, centerY + objHeight / 2 - arrowLength)
+    ctx.moveTo(centerX, centerY)
+    ctx.lineTo(centerX, centerY - arrowLength)
     ctx.stroke()
     
     // Ok başı
     ctx.beginPath()
-    ctx.moveTo(centerX - 35, centerY + objHeight / 2 - arrowLength + 12)
-    ctx.lineTo(centerX - 25, centerY + objHeight / 2 - arrowLength)
-    ctx.lineTo(centerX - 15, centerY + objHeight / 2 - arrowLength + 12)
+    ctx.moveTo(centerX - 10, centerY - arrowLength + 12)
+    ctx.lineTo(centerX, centerY - arrowLength)
+    ctx.lineTo(centerX + 10, centerY - arrowLength + 12)
     ctx.fill()
     
     // Fk etiketi
     ctx.fillStyle = '#2ecc71'
-    ctx.fillText('Fk', centerX - 55, centerY + 5)
+    ctx.fillText('Fk', centerX + 15, centerY - arrowLength + 15)
     
     // Durum göstergesi
     let statusText = ''
@@ -677,6 +677,14 @@ function App() {
       <footer>
         <p>Arşimet Prensibi Simülasyonu | VB6'dan Web'e Dönüştürüldü</p>
         <p><a href="https://github.com/bayramkotan" target="_blank" rel="noreferrer">Bayram Kotan</a></p>
+        <div className="university-info">
+          <img 
+            src="https://upload.wikimedia.org/wikipedia/tr/thumb/d/d5/%C4%B0stanbul_%C3%9Cniversitesi_logo.svg/120px-%C4%B0stanbul_%C3%9Cniversitesi_logo.svg.png" 
+            alt="İstanbul Üniversitesi" 
+            className="university-logo"
+          />
+          <span>İstanbul Üniversitesi - 2009</span>
+        </div>
       </footer>
     </div>
   )
