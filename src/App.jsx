@@ -38,8 +38,6 @@ function App() {
   const [objectDensity, setObjectDensity] = useState('2.70')
   const [measureType, setMeasureType] = useState('mass')
   const [measureValue, setMeasureValue] = useState('1000')
-  const [measureType, setMeasureType] = useState('mass')
-  const [measureValue, setMeasureValue] = useState('1000')
   const [selectedFluid, setSelectedFluid] = useState('')
   const [selectedObject, setSelectedObject] = useState('')
   
