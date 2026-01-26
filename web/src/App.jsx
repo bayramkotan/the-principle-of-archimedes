@@ -677,7 +677,7 @@ function App() {
         <p><a href="https://github.com/bayramkotan" target="_blank" rel="noreferrer">Bayram Kotan</a></p>
         <div className="university-info">
           <img 
-            src="https://www.istanbul.edu.tr/themes/flavor/images/logo.png" 
+            src="./assets/Istanbul_Universitesi.png" 
             alt="İstanbul Üniversitesi" 
             className="university-logo"
           />
