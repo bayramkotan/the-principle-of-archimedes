@@ -36,12 +36,12 @@ function App() {
   // State
   const [customFluid, setCustomFluid] = useState(true)
   const [customObject, setCustomObject] = useState(true)
-  const [fluidDensity, setFluidDensity] = useState('')
-  const [objectDensity, setObjectDensity] = useState('')
+  const [fluidDensity, setFluidDensity] = useState('0.91')
+  const [objectDensity, setObjectDensity] = useState('0.91')
   const [measureType, setMeasureType] = useState('mass')
-  const [measureValue, setMeasureValue] = useState('')
-  const [selectedFluid, setSelectedFluid] = useState('')
-  const [selectedObject, setSelectedObject] = useState('')
+  const [measureValue, setMeasureValue] = useState('0.91')
+  const [selectedFluid, setSelectedFluid] = useState('0.91')
+  const [selectedObject, setSelectedObject] = useState('0.91')
   
   // Hesaplama sonuçları
   const [results, setResults] = useState(null)
