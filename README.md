@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌊 ARŞİMET PRENSİBİ
+# ARŞİMET PRENSİBİ
 
 ### Sıvıların Kaldırma Kuvveti Simülasyonu
 
@@ -15,11 +15,7 @@
 [![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![License](https://img.shields.io/badge/Lisans-MIT-green?style=for-the-badge)](LICENSE)
 
-<br>
-
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="rainbow" width="100%">
-
-<br>
+---
 
 ### ✨ Arşimet prensibini görselleştiren interaktif fizik simülasyonu ✨
 
@@ -30,9 +26,7 @@
 | ρ_cisim > ρ_sıvı | ρ_cisim < ρ_sıvı | ρ_cisim = ρ_sıvı |
 | Fk < G | Fk = G | Fk = G |
 
-<br>
-
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="rainbow" width="100%">
+---
 
 </div>
 
@@ -268,27 +262,14 @@ the-principle-of-archimedes/
 
 <div align="center">
 
-```
-    2009                                      2025
-      │                                         │
-      ▼                                         ▼
-┌──────────┐                            ┌──────────┐
-│          │                            │          │
-│   VB6    │  ════════════════════════▶ │  React   │
-│          │       Modernizasyon        │          │
-└──────────┘                            └──────────┘
-      │                                         │
-      │    İstanbul Üniversitesi               │
-      │    Fizik Eğitimi için                  │
-      │    geliştirildi                        │
-      │                                         │
-      └─────────────────────────────────────────┘
-```
-
 | Versiyon | Teknoloji | Yıl | Durum |
 |:--------:|:---------:|:---:|:-----:|
 | 1.0 | Visual Basic 6.0 | 2009 | 📦 Arşiv |
 | 2.0 | React + Vite | 2025 | ✅ Aktif |
+
+**2009** yılında İstanbul Üniversitesi'nde Fizik Eğitimi için VB6 ile geliştirildi.
+
+**2025** yılında modern web teknolojileriyle (React + Vite) yeniden hayata geçirildi.
 
 </div>
 
