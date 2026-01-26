@@ -33,15 +33,15 @@ const MATERIALS = [
 ]
 
 function App() {
-  // State - Default: Zeytinyağı, Alüminyum, 1000g
-  const [customFluid, setCustomFluid] = useState(false)
-  const [customObject, setCustomObject] = useState(false)
+  // State - Default: Keyfi seçili, Zeytinyağı değeri, Alüminyum değeri, 1000g
+  const [customFluid, setCustomFluid] = useState(true)
+  const [customObject, setCustomObject] = useState(true)
   const [fluidDensity, setFluidDensity] = useState('0.91')
   const [objectDensity, setObjectDensity] = useState('2.70')
   const [measureType, setMeasureType] = useState('mass')
   const [measureValue, setMeasureValue] = useState('1000')
-  const [selectedFluid, setSelectedFluid] = useState('0.91')
-  const [selectedObject, setSelectedObject] = useState('2.70')
+  const [selectedFluid, setSelectedFluid] = useState('')
+  const [selectedObject, setSelectedObject] = useState('')
   
   // Hesaplama sonuçları
   const [results, setResults] = useState(null)
