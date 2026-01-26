@@ -46,7 +46,7 @@ function App() {
   const [status, setStatus] = useState({ text: 'Değerleri Girin', formula: '—' })
   const [suspendedPosition, setSuspendedPosition] = useState(2)
   
-  // Animasyon
+  // Animasyon ///
   const canvasRef = useRef(null)
   const animationRef = useRef(null)
   const currentYRef = useRef(0)
