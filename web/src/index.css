@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+  --bg-primary: #0a1628;
+  --bg-secondary: #0f2744;
+  --bg-panel: #162d50;
+  --accent-blue: #4da8da;
+  --accent-cyan: #00d4aa;
+  --accent-gold: #f5b041;
+  --water-blue: #2980b9;
+  --water-surface: #3498db;
+  --object-cyan: #00bcd4;
+  --text-primary: #e8f4f8;
+  --text-secondary: #8eb8d4;
+  --border-color: #1e4976;
+  --shadow-color: rgba(0, 0, 0, 0.4);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--bg-primary);
+  background-image: 
+    radial-gradient(ellipse at 20% 80%, rgba(77, 168, 218, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(0, 212, 170, 0.06) 0%, transparent 50%);
+  font-family: 'Crimson Pro', Georgia, serif;
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+}
