@@ -10,7 +10,7 @@
 
 ---
 
-## 🌐 [👆 CANLI DEMO - BURADA ÇALIK 👆](https://bayramkotan.github.io/the-principle-of-archimedes/)
+## 🌐 [CANLI DEMO - BURADA](https://bayramkotan.github.io/the-principle-of-archimedes/)
 
 > 🔗 **https://bayramkotan.github.io/the-principle-of-archimedes/**
 
@@ -115,7 +115,7 @@ Bu proje, **Arşimet Prensibi**'ni interaktif olarak öğretmek için tasarlanm�
 <div align="center">
 
 | | Formül | Açıklama |
-|:---:|:---|:---|
+|:---:|:---:|:---:|
 | 🌊 | **Fk = ρs × Vb × g** | Kaldırma Kuvveti |
 | ⚖️ | **G = m × g = ρc × Vc × g** | Ağırlık |
 | 📏 | **hb/hc = ρc/ρs** | Yükseklik Oranı |
@@ -125,8 +125,10 @@ Bu proje, **Arşimet Prensibi**'ni interaktif olarak öğretmek için tasarlanm�
 
 <br>
 
+<div align="center">
+
 | Sembol | Açıklama | Birim |
-|:------:|:---------|:-----:|
+|:------:|:--------:|:-----:|
 | **Fk** | Kaldırma Kuvveti | N |
 | **G** | Ağırlık | N |
 | **ρs** | Sıvı Yoğunluğu | g/cm³ |
@@ -134,6 +136,8 @@ Bu proje, **Arşimet Prensibi**'ni interaktif olarak öğretmek için tasarlanm�
 | **Vb** | Batan Hacim | cm³ |
 | **Vc** | Cisim Hacmi | cm³ |
 | **g** | Yerçekimi İvmesi | m/s² |
+
+</div>
 
 <br>
 
@@ -173,12 +177,16 @@ npm run preview
 
 ## 📖 Kullanım Kılavuzu
 
+<div align="center">
+
 | Adım | İşlem | Açıklama |
-|:---:|:---|:---|
+|:---:|:---:|:---:|
 | 1️⃣ | **Sıvı Seç** | Listeden veya keyfi değer gir |
 | 2️⃣ | **Cisim Seç** | Listeden veya keyfi değer gir |
 | 3️⃣ | **Büyüklük Gir** | Kütle (g) veya Hacim (cm³) |
 | 4️⃣ | **Hesapla** | ⚡ Butona tıkla ve izle! |
+
+</div>
 
 ### 💡 İpuçları
 
