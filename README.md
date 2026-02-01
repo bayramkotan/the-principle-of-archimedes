@@ -10,7 +10,12 @@
 
 ---
 
-[![Canlı Demo](https://img.shields.io/badge/🌐_Canlı_Demo-Tıkla-00d4aa?style=for-the-badge)](https://bayramkotan.github.io/the-principle-of-archimedes/)
+## 🌐 [👆 CANLI DEMO - BURADA ÇALIK 👆](https://bayramkotan.github.io/the-principle-of-archimedes/)
+
+> 🔗 **https://bayramkotan.github.io/the-principle-of-archimedes/**
+
+---
+
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![License](https://img.shields.io/badge/Lisans-MIT-green?style=for-the-badge)](LICENSE)
